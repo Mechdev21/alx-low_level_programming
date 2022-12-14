@@ -1,11 +1,11 @@
 #include <stdio.h>
+
 /**
  * Main - Entry point
  *
- * Description - "prints alphabet in lowercase except 'e' and 'q'
- * then followed by a newline"
+ * Description - prints alphabet in lowercase followed by newline
  *
- * Return: Always 0 (success)
+ * REturn: Always 0 (success)
  */
 
 int main(void)
@@ -15,10 +15,9 @@ int main(void)
 
 	while (start <= end)
 	{
-		if (start == 'e' && 'q')
-			start++;
 		putchar(start);
 		start++;
+
 	}
 	putchar('\n');
 	return (0);
