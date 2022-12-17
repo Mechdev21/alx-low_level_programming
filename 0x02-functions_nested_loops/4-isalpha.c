@@ -18,7 +18,7 @@ int _isalpha(int c)
 		if (c <= 90)
 			result = i;
 	}
-	else if (c >= 97)
+	if (c >= 97)
 	{
 		if (c <= 122)
 			result = i;
