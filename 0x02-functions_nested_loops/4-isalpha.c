@@ -13,16 +13,8 @@ int _isalpha(int c)
 	int j = 0;
 	int result;
 
-	if (c >= 65)
-	{
-		if (c <= 90)
-			result = i;
-	}
-	if (c >= 97)
-	{
-		if (c <= 122)
-			result = i;
-	}
+	if ((c >= 65 && c <= 90) || (c >=97 && c <= 122))
+		result = i;
 	else
 		result = j;
 
