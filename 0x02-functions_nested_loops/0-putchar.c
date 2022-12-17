@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
  * Main - Entry point prints _putchar followed by newline
  * Description: A program that prints _putchar
  *
- * Return: on success 0
+ * Return: on success 0.
  */
 
 int main(void)
