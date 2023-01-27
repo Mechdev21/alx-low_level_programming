@@ -5,7 +5,7 @@
  * @head: head ponter
  * @str: pointer to the string to be printed
  *
- * Return the address of the new node
+ * Return: the address of the new node
  */
 
 
@@ -23,7 +23,7 @@ list_t *add_node(list_t **head, const char *str)
 	create_node = malloc(sizeof(list_t));
 	if (create_node == 0)
 		return (NULL);
-	
+
 	create_node->len = len;
 	create_node->str = strdup(str);
 	create_node->next = *head;
