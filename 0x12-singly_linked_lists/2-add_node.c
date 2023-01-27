@@ -12,16 +12,15 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *create_node;
-	int len = 0;
-	int i = 0;
+	unsigned int len = 0;
+	
 
-	while (str[i] != '\0')
-		i++;
-	len = i;
+	while (str[len] != '\0')
+		len++;
 
 
 	create_node = malloc(sizeof(list_t));
-	if (create_node == 0)
+	if (!create_node)
 		return (NULL);
 
 	create_node->len = len;
