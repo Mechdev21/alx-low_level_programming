@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stddef.h>
+#include <stdio.h>
 /**
  * print_listint - a function that prints the elements of a list listint_t
  * @h: head pointer
