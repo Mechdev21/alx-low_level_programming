@@ -5,40 +5,47 @@
  * @head: a pointer to head
  * @str: a pointer to string to be printed
  *
- * Return: the address of the new node
+ * Return: the addres of the new node
  */
-
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *end;
+
+	unsigned int i;
+	list_t *new;
 	list_t *temp;
-	int i = 0;
 
-    end = malloc(sizeof(list_t));
+	new  = malloc(sizeof(list_t));
 
-    if (str == NULL)
-        return (NULL);
-    if (end == NULL)
-        return (NULL);
-    while (str[i])
-        i++;
-    if (*head == NULL)
-    {
-        end->len = i;
-        end->str = strdup(str);
-        end->next = NULL;
-        *head = end;
-        return (end);
-    }
+	if (str == NULL)
+		return (NULL);
 
-    temp = *head;
+	if (new == NULL)
+		return (NULL);
 
-    while (temp->next != NULL)
-        temp = temp->next;
-    temp->next = end;
-    end->len = i;
-    end->str = strdup(str);
-    end->next = NULL;
-    return (end);
+	for (i = 0; str[i]; i++)
+		;
+
+	if (*head == NULL)
+	{
+		*head = new;
+		new->len = i;
+		new->str = strdup(str);
+		new->next = NULL;
+		return (new);
+	}
+
+	temp = *head;
+
+	while (temp->next != NULL)
+		temp = temp->next;
+
+	temp->next = new;
+
+	new->len = i;
+	new->str = strdup(str);
+	new->next = NULL;
+
+	return (new);
+
 }
