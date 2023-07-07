@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - program that prints the number of arguments passed 
+ * main - program that prints the number of arguments passed
  * @argc: argument count
  * @argv: argument vector
  *
@@ -10,8 +10,15 @@ int main(int argc, char __attribute__((unused)) *argv[])
 {
 	int i;
 
-	for (i = 0; i < argc; i++)
-		;
+	if (argc == 1)
+	{
+		printf("%d\n", argc - 1);
+	}
+	else
+	{
+		for (i = 0; *argv; argv++,  i++)
+			;
+	}
 	printf("%d\n", i - 1);
 	return (0);
 }
