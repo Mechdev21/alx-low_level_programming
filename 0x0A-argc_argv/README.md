@@ -1,1 +1,1 @@
-command line args
+argv and argc
