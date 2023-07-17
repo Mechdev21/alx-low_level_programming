@@ -1,23 +1,22 @@
 #ifndef DOG_H
 #define DOG_H
+
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- * struct dog - defines a new type dog
- * @name: name of dog
- * @age: age of dog
- * @owner: who owns the dpog
+ * struct dog - defines a new type
+ * @name: of type char
+ * @age: type char
+ * @owner: type char
  *
- * Description: used to create a custom data type called dog
+ * Return: nothing
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_t;
-
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
-dog_t *new_dog(char *name, float age, char *owner);
-
+};
 
 #endif

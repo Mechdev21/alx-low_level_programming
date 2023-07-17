@@ -1,1 +1,1 @@
-structure in c 
+structures in c
