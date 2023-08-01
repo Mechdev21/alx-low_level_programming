@@ -11,7 +11,7 @@ size_t listint_len(const listint_t *h)
 	size_t n = 0;
 
 	if (h == NULL)
-		return (-1);
+		return (0);
 	temp = h;
 	while (temp != NULL)
 	{
