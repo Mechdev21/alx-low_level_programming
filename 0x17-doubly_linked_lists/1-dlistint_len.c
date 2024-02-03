@@ -2,8 +2,7 @@
 
 /**
  * dlistint_len - function that returns length of a list
- * h: function pointer to head
- *
+ * @h: pointer to the head of the list
  * Return: Leght of the list
  */
 
